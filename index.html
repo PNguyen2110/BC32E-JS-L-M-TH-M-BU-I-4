@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        fieldset {
+            width: 35rem;
+            margin: 100px auto;
+            border: 5px solid rgb(99, 99, 194);
+            height:350px;
+            border-radius:20%;
+        }
+        legend {
+            color:red;
+            text-align:center;
+            margin-top: 30px;
+        }
+        p{
+            background-color:rgb(99, 99, 194);
+            color:white;
+            width:90%;
+            font-size:20px;
+            text-align: center;
+        }
+        label{
+            width:90px;
+            display: inline-block;
+        }
+        .form4{
+            width:800px;
+            height: 405px;
+        }
+        
+
+        
+        
+    </style>
+  </head>
+  <body>
+    <fieldset>
+        
+        <div class="wrapper ml-4 ">
+            <legend>BÀI 1: TÍNH NGÀY THÁNG</legend>
+            <div class="div1">
+                <label for="nhapNgay">Nhập ngày:</label>
+                <input class="ml-2" id="nhapNgay" type="number" placeholder="Nhập ngày">
+            </div>
+            <div class="div2">
+                <label for="nhapThang">Nhập tháng:</label>
+                <input class="ml-2" id="nhapThang" type="number" placeholder="Nhập tháng">
+            </div>
+            <div class="div3">
+                <label for="nhapNam">Nhập năm:</label>
+                <input class="ml-2" id="nhapNam" type="number" placeholder="Nhập năm">
+            </div>
+            <br>
+            <div>
+                <button class="btn btn-primary" id="btnNgayHomQua">Ngày Hôm Qua</button>
+                <button class="btn btn-primary" id="btnNgayMai">Ngày Mai</button>
+            </div>
+            <br>
+          
+            <p id="pNgay"></p>
+        </div>
+        
+    
+    </fieldset>
+
+
+
+    <!-- BÀI 2 -->
+
+
+    <fieldset>
+        <div class="wrapper ml-4">
+
+            <legend>BÀI 2: TÍNH SỐ NGÀY KHI NHẬP THÁNG VÀ NĂM </legend>
+           
+            <div class="div2">
+                <label for="nhapThang2">Nhập tháng:</label>
+                <input class="ml-2" id="nhapThang2" type="number" placeholder="Nhập tháng">
+            </div>
+            <div class="div3">
+                <label for="nhapNam2">Nhập năm:</label>
+                <input class="ml-2" id="nhapNam2" type="number" placeholder="Nhập năm">
+            </div>
+            <br>
+            <div>
+                <button class="btn btn-primary" id="btnTinhSoNgay">Tính Số Ngày</button>
+                
+            </div>
+            <br>
+            <p id="pNgay2"></p>
+        </div>
+
+    </fieldset>
+
+    <!-- BÀI 3:ĐỌC SỐ -->
+
+    <fieldset>
+        <div class="wrapper ml-4">
+
+            <legend>BÀI 3:ĐỌC SỐ</legend>
+           
+            <div class="div2">
+                <label for="nhapSo">Nhập 3 Số:</label>
+                <input class="ml-2" id="nhapSo" type="number" placeholder="Nhập 3 số">
+            </div>
+            
+            <br>
+            <div>
+                <button class="btn btn-primary" id="btnDocSo">Đọc Số</button>
+                
+            </div>
+            <br>
+            <p id="pso"></p>
+        </div>
+
+    </fieldset>
+
+
+<!-- BÀI SỐ 4: Tính Quảng Đường -->
+
+<fieldset class = form4>
+        
+    <div class="wrapper ml-4 ">
+        <legend>BÀI SỐ 4: Tính Quảng Đường</legend>
+        <div class="div1">
+            sv1
+            <input class="ml-2" id="nhapTen1" type="text" placeholder="Nhập tên">
+            <input class="ml-2" id="nhapx1" type="number" placeholder="Nhập toạ độ x">
+            <input class="ml-2" id="nhapy1" type="number" placeholder="Nhập toạ độ y">
+        </div>
+        <br>
+        <div class="div2">
+            sv2
+            <input class="ml-2" id="nhapTen2" type="text" placeholder="Nhập tên">
+            <input class="ml-2" id="nhapx2" type="number" placeholder="Nhập toạ độ x">
+            <input class="ml-2" id="nhapy2" type="number" placeholder="Nhập toạ độ y">
+        </div>
+        <br>
+        <div class="div3">
+            sv3
+            <input class="ml-2" id="nhapTen3" type="text" placeholder="Nhập tên">
+            <input class="ml-2" id="nhapx3" type="number" placeholder="Nhập toạ độ x">
+            <input class="ml-2" id="nhapy3" type="number" placeholder="Nhập toạ độ y">
+        </div>
+        <br>
+        <div class="div4">
+            
+            Trường:
+            <input class="ml-2" id="nhapXTruong" type="number" placeholder="Nhập toạ độ x">
+            <input class="ml-2" id="nhapYTruong" type="number" placeholder="Nhập toạ độ y">
+        </div>
+        <br>
+        <div>
+            
+            <button class="btn btn-primary" id="btnTinh">Tính</button>
+        </div>
+
+        <br>
+      
+        <p id="pTinh"></p>
+    </div>
+    
+
+</fieldset>
+
+
+
+
+
+
+
+
+
+
+
+    <script src="./main.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
